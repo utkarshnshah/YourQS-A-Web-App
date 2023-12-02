@@ -1,0 +1,97 @@
+@media print {
+    * {
+        text-shadow: none !important;
+        color: #000 !important;
+        background: transparent !important;
+        box-shadow: none !important;
+    }
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+
+    img {
+        page-break-inside: avoid;
+        max-width: 100% !important;
+    }
+    h2, h3 { page-break-after: avoid; }
+    p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    table {
+        border-collapse: collapse !important;
+        thead { display: table-header-group; }
+        tr { page-break-inside: avoid; }
+        td, th { background: #fff !important; }
+    }
+    header, footer { display: none; }
+    @page { margin: 0.25in; }
+    /* Engineering Properties */
+    #flangeThickness{
+        position: absolute;
+        top: 12%;
+        left: 54%;
+        transform: translate( -12%, -55% );
+        text-align: center;
+        color: red;
+        font-weight: bold;   
+    }
+    #depth{
+        position: absolute;
+        top: 56%;
+        left: 40.5%;
+        transform: translate( -56%, -40.5% );
+        text-align: center;
+        color: red;
+        font-weight: bold;   
+    }
+    #webThickness{
+        position: absolute;
+        top: 49%;
+        left: 59%;
+        transform: translate( -49%, -59% );
+        text-align: center;
+        color: red;
+        font-weight: bold;   
+    }
+    #width{
+        position: absolute;
+        top: 89.5%;
+        left: 53%;
+        transform: translate( -89.5%, -53% );
+        text-align: center;
+        color: red;
+        font-weight: bold;   
+    }
+    #sectionImageDiv{
+        margin-bottom: 20px;
+    }
+    #menu{        
+        visibility: hidden;
+        display: none;
+    }
+    #displayUserName{
+        visibility: hidden;
+        display: none;
+    }
+    #printButton{
+        visibility: hidden;        
+        display: none;
+    }
+    #printButtonF{
+        visibility: hidden;        
+        display: none;
+    }
+    #printMessage{
+        visibility: hidden;        
+        display: none;
+    }
+    #allProperties{
+        font-size: 18px;
+    }
+    html, body {
+        border: 1px solid white;
+        height: 99%;
+        page-break-after: avoid;
+        page-break-before: avoid;
+    }
+}
